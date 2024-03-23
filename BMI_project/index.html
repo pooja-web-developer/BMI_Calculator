@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <section>
+        <h1>BMI Calculation & Status</h1>
+    </section>
+
+
+    <section id="container">
+        
+        <div id="form-box">
+
+            <h2>BMI Calculator</h2>
+
+            <div class="form-content">
+
+                <div class="input_field">
+                    <label for="age">Age</label>
+                    <input type="number" placeholder="Enter your age" id="age">
+                </div>
+
+
+                <div class="input_field">
+                    <label for="height">Height(cm)</label>
+                    <input type="number" placeholder="Enter your height" id="height">
+                </div>
+
+
+                <div class="input_field">
+                    <label for="weight">Weight</label>
+                    <input type="number" placeholder="Enter your weight" id="weight">
+                </div>
+            
+
+                <div class="gender">
+                    <input type="radio" name="male" value="male" id="m">Male
+                    <input type="radio" name="female" value="female" id="f">Female
+                </div>
+             
+             
+                <div class="btn">
+                    <button id="calculate">Calculate BMI</button>
+                </div>
+        
+            </div>
+            
+
+            <div class="result">
+                <p>Your BMI is:</p>
+                <div  id="result">00.00</div>
+            </div>
+
+        </div>
+
+        <div id="table-box">
+            
+            <h2>BMI Classification</h2>
+
+            <div class="table-content">
+
+                <table>
+
+                    <thead>
+                        <tr id="weightstatus">
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr id="below">
+                            <td>Below 18.5</td>
+                            <td>Under weight</td>
+                        </tr>
+                        <tr id="normal">
+                            <td>18.5–24.9</td>
+                            <td>Normal weight</td>
+                        </tr>
+                        <tr id="over">
+                            <td>25–29.9</td>
+                            <td>Over weight</td>
+                        </tr>
+                        <tr id="obese">
+                            <td>30–35</td>
+                            <td>Obese</td>
+                        </tr>
+                        <tr id="morbid">
+                            <td>Over 35</td>
+                            <td>Morbid obesity</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+            
+        </div>
+
+        <div id="content-box">
+
+            <h2>Healthy Lifestyle</h2>
+            <ul>
+                <li>Healthy BMI range: 18.5 kg/m2 - 25 kg/m2</li>
+                <li>Healthy weight for the height: 43.3 kg - 58.5 kg</li>
+                <li>Lose 1.5 kg to reach a BMI of 25 kg/m2.</li>
+                <li>BMI Prime: 1.02</li>
+                <li>Ponderal Index: 16.8 kg/m3</li>
+            </ul>
+
+        </div>
+
+
+    
+        
+    <script src="script.js"></script>
+    </section>
+</body>
+</html>
